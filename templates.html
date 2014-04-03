@@ -1,0 +1,26 @@
+<script type="text/ng-template" id="addLoc.html">
+<div class="viewContainer">
+
+	<form id="addLocation" class="pure-form">
+
+		<fieldset>
+			<legend>Add a new location</legend>
+			<input type="text" name="newLocation" value="" placeholder="type a city name, e.g. Southampton" ng-model="sc.locName" ng-change="locChange();">
+			<button name="addLocation" class="pure-button" ng-show="validValue" ng-click="addLocation(sc.locName);">add</button>
+			<small ng-show="searchingForLocation">searching for location...</small>
+			<small ng-show="locNotFound">Location not found!</small>
+	</fieldset>
+	</form>
+
+</div>
+</script>
+
+<script type="text/ng-template" id="splash.html">
+<div class="viewContainer">
+	<div class="header">
+	    <h1>The Weather Now</h1>
+
+	    <h2>Fully customizable and responsive CSS grids.</h2>
+	</div>
+</div>
+</script>
