@@ -4,7 +4,7 @@
 
 		<fieldset>
 			<legend>Add a new location</legend>
-			<input type="text" name="newLocation" value="" placeholder="type a city name, e.g. Southampton" ng-model="sc.locName" ng-change="locChange();">
+			<input type="text" name="newLocation" placeholder="type a city, e.g. Paris,FR" ng-model="sc.locName" ng-change="locChange();">
 			<button name="addLocation" class="pure-button" ng-show="validValue" ng-click="addLocation(sc.locName);">add</button>
 			<small ng-show="searchingForLocation">searching for location...</small>
 			<small ng-show="locNotFound">Location not found!</small>
