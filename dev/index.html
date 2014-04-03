@@ -5,6 +5,9 @@
 </head>
 <body ng-controller="mainCtrl">
 
+	<!-- bg image -->
+	<div id="bg"></div>
+
 	<div id="layout" class="pure-g-r">
 
 		<!-- sidebar -->
@@ -15,7 +18,9 @@
 				<ul>
 					<li><a href="#/addLoc">Add a city</a></li>
 					<li class="pure-menu-heading">Locations</li>
-					<li ng-repeat="loc in locations"><a href>{{loc.name}}, {{loc.sys.country}}</a></li>
+					<li ng-repeat="loc in locations">
+						<a href="#/location/{{loc.name}}">{{loc.name}}, {{loc.sys.country}}</a>
+					</li>
 			    </ul>
 			</div>
 		</div>

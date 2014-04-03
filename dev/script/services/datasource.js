@@ -19,7 +19,8 @@
 			$http({
 				url: 'http://api.openweathermap.org/data/2.5/weather',
 				params: {
-					q: cityName
+					q: cityName,
+					units: 'metric'
 				},
 				method: 'GET'
 			})
@@ -46,6 +47,21 @@
 		this.getLocations = function(){
 			return this.locations;
 		};
+
+		this.getLocation = function(locName){
+
+			var location;
+
+			this.locations.forEach(function(loc){
+				if(loc.name === locName){
+					location = loc;
+					return true;
+				}
+			});
+
+			return location;
+		};
+
 	}]);
 
 }());

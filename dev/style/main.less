@@ -5,17 +5,39 @@ body {
 	font-family: 'quicksandregular';
 }
 
-
-#menu {
-	background: #191818;
-	color: #fff;
-
+#bg {
+	background: url('img/bg.png');
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	z-index: -1;
 }
 
+#menu .pure-menu {
+	overflow: hidden;
+}
+
+// override font
+.pure-g-r [class*="pure-u"],
+.pure-g {
+	font-family: 'quicksandregular';
+}
 
 // splashScreen
 .viewContainer {
 
-	padding: 15px;
+	margin: 15px;
+	padding: 5px;
 	font-family: 'quicksandregular';
+	border: 1px solid #999;
+	border-radius: 4px;
+	background: #fff;
+}
+
+
+.label {
+	text-align: right;
+	padding: 0 10px;
 }

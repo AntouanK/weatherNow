@@ -18,6 +18,7 @@ var gulp             = require('gulp'),
     //	files paths
     lessFilesPath     = ['dev/style/main.less'],
 	fontFilesPath     = ['dev/style/quicksand*.*'],
+	imgFilesPath      = ['dev/style/bg.png'],
 	templateFilesPath = ['dev/templates/*.html'],
     jsFilesPaths      = [
 		'dev/script/thirdParty/angular.js',
@@ -42,6 +43,8 @@ gulp.task('copyStyleFiles', function(){
     getFiles(fontFilesPath)
     .pipe(gulp.dest(buildPath + 'style/'));
 
+	getFiles(imgFilesPath)
+	.pipe(gulp.dest(buildPath + 'img/'));
 });
 
 //    lint JS files

@@ -16,7 +16,12 @@ angular.module('wnApp')
 	.when('/addLoc', {
 		templateUrl: 'addLoc.html',
 		controller: 'addLocCtrl'
+	})
+	.when('/location/:locName', {
+		templateUrl: 'location.html',
+		controller: 'locationCtrl'
 	});
+
 }]);
 
 }());
