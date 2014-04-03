@@ -15,9 +15,10 @@
 			return $location.path('');
 		}
 
+		//	set the location to the one selected
 		$scope.loc = loc;
-		console.log(loc, loc.weather[0].main);
 
+		//	change the icon according to the weather
 		switch(loc.weather[0].main){
 		case 'Clear':
 			$scope.weatherIcon = 'clear';
@@ -27,6 +28,9 @@
 			break;
 		case 'Clouds':
 			$scope.weatherIcon = 'clouds';
+			break;
+		case 'Rain':
+			$scope.weatherIcon = 'rain';
 			break;
 		}
 	}]);
