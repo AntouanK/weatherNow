@@ -12,12 +12,23 @@
 
 		//	if location is not ready, go home
 		if(loc === undefined){
-			 $location.path('');
+			return $location.path('');
 		}
 
 		$scope.loc = loc;
+		console.log(loc, loc.weather[0].main);
 
-		console.log(loc);
+		switch(loc.weather[0].main){
+		case 'Clear':
+			$scope.weatherIcon = 'clear';
+			break;
+		case 'Haze':
+			$scope.weatherIcon = 'haze';
+			break;
+		case 'Clouds':
+			$scope.weatherIcon = 'clouds';
+			break;
+		}
 	}]);
 
 })();

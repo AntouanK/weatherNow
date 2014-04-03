@@ -18,7 +18,7 @@
 				<ul>
 					<li><a href="#/addLoc">Add a city</a></li>
 					<li class="pure-menu-heading">Locations</li>
-					<li ng-repeat="loc in locations">
+					<li ng-repeat="loc in locations" class="slide-down-up">
 						<a href="#/location/{{loc.name}}">{{loc.name}}, {{loc.sys.country}}</a>
 					</li>
 			    </ul>
@@ -26,7 +26,7 @@
 		</div>
 
 		<!-- content -->
-		<div id="mainContent" class="content pure-u-3-4" ng-view>
+		<div id="mainContent" class="content pure-u-3-4 soft-scale" ng-view>
 			<!-- main view in here -->
 		</div>
 

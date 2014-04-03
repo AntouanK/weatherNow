@@ -1,5 +1,7 @@
 @import (less) 'pure-min.css';
+@import 'vendorMixins.less';
 @import 'font.less';
+@import 'ngAnimate.less';
 
 body {
 	font-family: 'quicksandregular';
@@ -34,10 +36,84 @@ body {
 	border: 1px solid #999;
 	border-radius: 4px;
 	background: #fff;
+	overflow: hidden;
 }
 
 
 .label {
 	text-align: right;
 	padding: 0 10px;
+}
+
+.weather-description {
+	font-size: 20px;
+}
+
+
+//////
+.icon-haze {
+	display: inline-block;
+	background-image: url('img/weathericons.png');
+	background-position: 0 0;
+	width: 70px;
+	height: 75px;
+}
+
+.icon-celsius {
+	display: inline-block;
+	background-image: url('img/weathericons.png');
+	background-position: 210px 75px;
+	width: 70px;
+	height: 75px;
+}
+
+
+.icon-cloudSun {
+	display: inline-block;
+	background-image: url('img/weathericons.png');
+	background-position: -70px -75px;
+	width: 70px;
+	height: 75px;
+}
+
+.icon-clear {
+	display: inline-block;
+	background-image: url('img/weathericons.png');
+	background-position: -70px 0;
+	width: 70px;
+	height: 75px;
+}
+
+.icon-clouds {
+	display: inline-block;
+	background-image: url('img/weathericons.png');
+	background-position: -70px -150px;
+	width: 70px;
+	height: 75px;
+}
+
+
+.icon-cloudSun-night {
+	display: inline-block;
+	background-image: url('img/weathericons.png');
+	background-position: -140px -75px;
+	width: 70px;
+	height: 75px;
+}
+
+.icon-thunderstorm {
+	display: inline-block;
+	background-image: url('img/weathericons.png');
+	background-position: -210px -150px;
+	width: 70px;
+	height: 75px;
+}
+
+
+.icon-cloud {
+	display: inline-block;
+	background-image: url('img/weathericons.png');
+	background-position: -70px -150px;
+	width: 70px;
+	height: 75px;
 }

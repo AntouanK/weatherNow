@@ -9,7 +9,7 @@
 
 	'use strict';
 
-	var wnApp = angular.module('wnApp',[ 'ngRoute' ]);
+	var wnApp = angular.module('wnApp',[ 'ngRoute', 'ngAnimate' ]);
 
 	wnApp.controller('mainCtrl', ['$scope', 'datasource', function($scope, datasource){
 

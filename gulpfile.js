@@ -18,7 +18,7 @@ var gulp             = require('gulp'),
     //	files paths
     lessFilesPath     = ['dev/style/main.less'],
 	fontFilesPath     = ['dev/style/quicksand*.*'],
-	imgFilesPath      = ['dev/style/bg.png'],
+	imgFilesPath      = ['dev/style/*.png'],
 	templateFilesPath = ['dev/templates/*.html'],
     jsFilesPaths      = [
 		'dev/script/thirdParty/angular.js',
