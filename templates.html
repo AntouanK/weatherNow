@@ -40,7 +40,7 @@
 			Temperature (celsius):
 		</div>
 		<div class="pure-u-1-2">
-			{{loc.main.temp}} C
+			{{loc.main.temp | number:1}} C
 		</div>
 	</div>
 	<div class="pure-g">
@@ -48,7 +48,7 @@
 			max / min:
 		</div>
 		<div class="pure-u-1-2">
-			{{loc.main.temp_max}} - {{loc.main.temp_min}}
+			{{loc.main.temp_max | number:1}} - {{loc.main.temp_min | number:1}}
 		</div>
 	</div>
 	<div class="pure-g">
