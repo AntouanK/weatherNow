@@ -1,0 +1,13 @@
+<div class="viewContainer">
+
+	<form id="addLocation" class="pure-form">
+
+		<fieldset>
+			<legend>Add a new location</legend>
+			<input type="text" name="newLocation" value="" placeholder="type a city name, e.g. Southampton" ng-model="sc.locName">
+			<button name="addLocation" class="pure-button" ng-show="locationFound" ng-click="addLocation(sc.locName);">add</button>
+			<small ng-show="searchingForLocation">searching for location...</small>
+	</fieldset>
+	</form>
+
+</div>

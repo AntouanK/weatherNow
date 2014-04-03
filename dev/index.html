@@ -1,0 +1,35 @@
+<html ng-app="wnApp">
+<head>
+	<title>weather now - an app to show you the weather in the UK</title>
+	<style>/*main.css*/</style>
+</head>
+<body ng-controller="mainCtrl">
+
+	<div id="layout" class="pure-g-r">
+
+		<!-- sidebar -->
+		<div id="menu" class="menu pure-u-1-4">
+			<div class="pure-menu pure-menu-open">
+			    <a class="pure-menu-heading">The Weather Now</a>
+
+				<ul>
+					<li><a href="#/addLoc">Add a city</a></li>
+					<li class="pure-menu-heading">Locations</li>
+					<li><a href>London</a></li>
+					<li><a href>Luton</a></li>
+			        <li><a href>Manchester</a></li>
+			    </ul>
+			</div>
+		</div>
+
+		<!-- content -->
+		<div id="mainContent" class="content pure-u-3-4" ng-view>
+			<!-- main view in here -->
+		</div>
+
+	</div>
+
+	<!-- scripts -->
+	<script type="text/javascript" src="script/main.js"></script>
+</body>
+</html>
