@@ -48,7 +48,8 @@ gulp.task('copyStyleFiles', function(){
 gulp.task('lint', function(){
 
     var filter = gulpFilter([
-		'!angular*'
+		'!angular*',
+		'!querystring*'
     ]);
 
     getFiles(jsFilesPaths)

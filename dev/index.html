@@ -15,9 +15,7 @@
 				<ul>
 					<li><a href="#/addLoc">Add a city</a></li>
 					<li class="pure-menu-heading">Locations</li>
-					<li><a href>London</a></li>
-					<li><a href>Luton</a></li>
-			        <li><a href>Manchester</a></li>
+					<li ng-repeat="loc in locations"><a href>{{loc.name}}, {{loc.sys.country}}</a></li>
 			    </ul>
 			</div>
 		</div>

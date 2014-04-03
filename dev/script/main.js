@@ -11,9 +11,9 @@
 
 	var wnApp = angular.module('wnApp',[ 'ngRoute' ]);
 
-	wnApp.controller('mainCtrl', ['$scope', function($scope){
+	wnApp.controller('mainCtrl', ['$scope', 'datasource', function($scope, datasource){
 
-		$scope.test = 'TEST HERE';
+		$scope.locations = datasource.getLocations();
 	}]);
 }());
 
