@@ -11,7 +11,7 @@
 
 	var wnApp = angular.module('wnApp',[ 'ngRoute', 'ngAnimate' ]);
 
-	wnApp.controller('mainCtrl', ['$scope', 'datasource', function($scope, datasource){
+	wnApp.controller('mainCtrl', ['$scope', '$timeout', 'datasource', function($scope, $timeout, datasource){
 
 		$scope.locations = datasource.getLocations();
 
@@ -20,6 +20,15 @@
 		//	Luton
 		//	Manchester
 		//	Birmingham
+
+		var refreshTime = function(){
+			$scope.timeNow = Date.now();
+			$timeout(function(){
+				refreshTime();
+			},1000);
+		};
+
+		refreshTime();
 
 		datasource
 		.searchByCity('London,uk')
