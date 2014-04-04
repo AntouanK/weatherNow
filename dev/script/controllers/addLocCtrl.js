@@ -33,7 +33,6 @@
 					$scope.locChange();
 				},100);
 
-				console.log(data);
 			},
 			function(data){
 				$scope.searchingForLocation = false;

@@ -13,14 +13,10 @@
 
 	wnApp.controller('mainCtrl', ['$scope', '$timeout', 'datasource', function($scope, $timeout, datasource){
 
+		//	bind to the locations in the datasource so we can display them at any time
 		$scope.locations = datasource.getLocations();
 
-		// initialize with :
-		//	London
-		//	Luton
-		//	Manchester
-		//	Birmingham
-
+		//	small interval function to refresh the clock
 		var refreshTime = function(){
 			$scope.timeNow = Date.now();
 			$timeout(function(){
@@ -30,6 +26,12 @@
 
 		refreshTime();
 
+
+		// initialize with :
+		//	London
+		//	Luton
+		//	Manchester
+		//	Birmingham
 		datasource
 		.searchByCity('London,uk')
 		.then(function(data){
